@@ -1,0 +1,10 @@
+npx create-react-app asc-apf
+cd asc-apf/src
+yarn add semantic-ui-react semantic-ui-css
+yarn add react-router react-router-dom
+yarn add firebase react-with-firebase-auth
+yarn add ol
+
+delete AppTest
+mkdir components
+

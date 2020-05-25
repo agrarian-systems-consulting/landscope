@@ -1,0 +1,285 @@
+/* Contrôles Natifs */
+.ol-control button {
+  background-color: rgba(224, 18, 110,0.9) !important;
+}
+.ol-scale-line {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  padding: 5px;
+  left: unset;
+  right: 8px;
+  bottom: 50px;
+}
+
+.ol-scale-line-inner {
+  color: rgb(46, 46, 46);
+  border-color: rgb(46, 46, 46);
+  font-size: x-small;
+}
+
+.ol-mouse-position {
+  top: unset;
+  right: 8px;
+  bottom: 100px;
+  font-size: x-small;
+}
+.mousePosition {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(46, 46, 46);
+  padding: 5px;
+  border-radius: 2px;
+}
+.ol-overviewmap {
+  bottom: 2em;
+}
+.ol-zoomslider {
+  top: 7em;
+  left: unset;
+  right: 8px;
+}
+.ol-rotate {
+  top: 2.5em;
+}
+
+/* Exemple Contrôle */
+.ol-new {
+  top: 0.5em;
+  left: 2.5em;
+}
+
+/* Autres contrôles */
+.ol-measureDistance {
+  top: 0.5em;
+  left: 2.5em;
+}
+.ol-measureArea {
+  top: 0.5em;
+  left: 4.5em;
+}
+.ol-zoom {
+  left: unset;
+  right: 8px;
+  top: 3em;
+}
+.ol-geolocation {
+  top: 0.5em;
+  left: 8.5em;
+}
+.ol-geocoding {
+  top: 0.5em;
+  left: 10.5em;
+}
+.ol-exportImg {
+  top: 0.5em;
+  left: 12.5em;
+}
+.ol-layersPanel {
+  top: 4.5em;
+  right: 0.5em;
+}
+.ol-layersPanel2 {
+  top: 4.5em;
+  right: 0.5em;
+}
+.ol-getInfo {
+  top: 6.5em;
+  right: 0.5em;
+}
+.ol-draw {
+  top: 8.5em;
+  right: 0.5em;
+}
+.ol-modify {
+  top: 10.5em;
+  right: 0.5em;
+}
+.ol-delete {
+  top: 12.5em;
+  right: 0.5em;
+}
+.ol-register {
+  top: 14.5em;
+  right: 0.5em;
+}
+
+/* Mesure Distance */
+.distance {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: rgba(255, 0, 40, 1);
+  padding: 4px 8px;
+  opacity: 0.7;
+  border: 1px dashed rgba(255, 0, 40, 1);
+  white-space: nowrap;
+}
+.distance-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.distance-static {
+  background-color: rgba(255, 0, 40, 1);
+  color: #fff;
+  border: 1px solid white;
+  font-weight: bold;
+}
+.distance-measure:before,
+.distance-static:before {
+  border-top: 6px solid rgba(255, 0, 40, 0.85);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.distance-static:before {
+  border-top-color: rgba(255, 0, 40, 0.85);
+}
+.tooltip-inner {
+  white-space: nowrap;
+}
+
+/* Mesure Aire */
+.area {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: rgba(40, 0, 255, 1);
+  padding: 4px 8px;
+  opacity: 0.7;
+  border: 1px dashed rgba(40, 0, 255, 1);
+  white-space: nowrap;
+}
+.area-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.area-static {
+  background-color: rgba(40, 0, 255, 1);
+  color: #fff;
+  border: 1px solid white;
+  font-weight: bold;
+}
+.area-measure:before,
+.area-static:before {
+  border-top: 6px solid rgba(40, 0, 255, 0.85);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.area-static:before {
+  border-top-color: rgba(40, 0, 255, 0.85);
+}
+
+/* Geocoding */
+.geocoding-container {
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  /*width: 100%;*/
+  z-index: 9999;
+  display: none;
+}
+.geocoding-content {
+  padding: 10px;
+}
+
+/* Layers Panel */
+.layersPanel-container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40%;
+  z-index: 9999;
+  display: none;
+}
+.layersPanel-content {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  margin: 10px;
+  padding: 30px 10px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Layers Panel */
+.layersPanel-container2 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40%;
+  z-index: 9999;
+  display: none;
+}
+.layersPanel-content2 {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  margin: 10px;
+  padding: 30px 10px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+
+.ol-popup {
+  color: #fff;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+.ol-popup:after,
+.ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.ol-popup-closer:after {
+  color: red;
+}
