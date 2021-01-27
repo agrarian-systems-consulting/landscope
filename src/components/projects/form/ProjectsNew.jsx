@@ -16,6 +16,7 @@ import {
   formatGML,
   MapboxStreet,
   layerVector,
+  OSM,
 } from '../../map/MapLayers';
 import { interactionDraw } from '../../map/MapInteractions';
 import {
@@ -76,7 +77,7 @@ class ProjectsNew extends Component {
       mousePosition,
     ]),
     // Set layers
-    layers: [MapboxStreet],
+    layers: [OSM],
     // Set view
     view: new OlView({
       projection: 'EPSG:3857',
