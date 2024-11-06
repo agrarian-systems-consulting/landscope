@@ -114,8 +114,8 @@ const ProjectDetailPage = ({ match }) => {
     <Grid>
       <Grid.Column width={16}>
         <Breadcrumb>
-          <Breadcrumb.Section as={Link} to='/projets'>
-            Projets
+          <Breadcrumb.Section as={Link} to='/cases'>
+            Cases
           </Breadcrumb.Section>
           <Breadcrumb.Divider />
           <Breadcrumb.Section active>
@@ -128,16 +128,16 @@ const ProjectDetailPage = ({ match }) => {
         <Grid.Column width={10}>
           <Segment.Group>
             <Segment attached='top'>
-              <h5>Présentation du projet</h5>
+              <h5>Case description</h5>
             </Segment>
             <Segment attached='bottom'>
-              <h5>Nom du projet</h5>
+              <h5>Case title</h5>
               <p>{project.name_project}</p>
 
-              <h5>Résumé</h5>
+              <h5>History</h5>
               <p>{project.main_objective}</p>
 
-              <h5>Filières concernées</h5>
+              <h5>Main crops</h5>
               <Label.Group>
                 {project.commodities && (
                   <CommoditiesList commodities={project.commodities} />
@@ -205,7 +205,7 @@ const ProjectDetailPage = ({ match }) => {
                 )}
               </p>
 
-              <h5>Pays concernés</h5>
+              <h5>Suku</h5>
               <p>
                 {project.country ? (
                   <Fragment>
@@ -223,7 +223,7 @@ const ProjectDetailPage = ({ match }) => {
           </Segment.Group>
           <Segment.Group>
             <Segment attached='top'>
-              <h5>Parties prenantes</h5>
+              <h5>Stakeholders</h5>
             </Segment>
             <Segment attached='bottom'>
               {project.actors ? (
@@ -239,14 +239,14 @@ const ProjectDetailPage = ({ match }) => {
               )}
             </Segment>
           </Segment.Group>
-          <Segment.Group>
+          {/* <Segment.Group>
             <Segment attached='top'>
               <h5>Financements</h5>{' '}
             </Segment>
             <Segment attached='bottom'>
               {project.funds ? project.funds : 'Non renseignés'}
             </Segment>
-          </Segment.Group>
+          </Segment.Group> */}
         </Grid.Column>
         {/* Uncomment following line to debug */}
         {/* <pre>project = {JSON.stringify(project, null, 2)}</pre> */}

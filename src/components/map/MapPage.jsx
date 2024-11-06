@@ -316,7 +316,7 @@ class TheMap extends Component {
                       size='small'
                       color='teal'
                       as={NavLink}
-                      to={`/projets/${this.state.panelContent.project_id}`}
+                      to={`/cases/${this.state.panelContent.project_id}`}
                     >
                       En savoir plus
                     </Button>

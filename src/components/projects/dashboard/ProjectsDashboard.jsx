@@ -34,6 +34,7 @@ const Projets = (props) => {
   // Filter Projects hooks
   const [search, setSearch] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
+  const [filterStatus, setFilterStatus] = useState('all');
 
   // Method to filter projects
   const filteredProjects = () => {
@@ -75,7 +76,7 @@ const Projets = (props) => {
       <Grid>
         <Grid.Column width={16}>
           <Breadcrumb>
-            <Breadcrumb.Section active>Projets</Breadcrumb.Section>
+            <Breadcrumb.Section active>Conflict cases</Breadcrumb.Section>
           </Breadcrumb>
         </Grid.Column>
       </Grid>
@@ -84,7 +85,9 @@ const Projets = (props) => {
           <ProjectsSidebar
             setSearch={setSearch}
             setFilterCategory={setFilterCategory}
+            setFilterStatus={setFilterStatus}
             filterCategory={filterCategory}
+            filterStatus={filterStatus}
           />
         </Grid.Column>
         <Grid.Column width={12}>

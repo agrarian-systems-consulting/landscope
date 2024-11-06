@@ -21,10 +21,10 @@ export const ProjectsList = ({ projects, isLoading }) => {
     <Table celled selectable fixed singleLine>
       <Table.Header>
         <Table.Row>
-          <Table.HeaderCell textAlign='center'>Pays</Table.HeaderCell>
-          <Table.HeaderCell colSpan='2'>Titre</Table.HeaderCell>
+          <Table.HeaderCell textAlign='center'>Suku</Table.HeaderCell>
+          <Table.HeaderCell colSpan='2'>Title</Table.HeaderCell>
           <Table.HeaderCell colSpan='2' textAlign='center'>
-            Commodités
+            Status
           </Table.HeaderCell>
         </Table.Row>
       </Table.Header>

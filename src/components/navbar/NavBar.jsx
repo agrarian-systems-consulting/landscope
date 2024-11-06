@@ -10,28 +10,22 @@ export const NavBar = () => {
     <Menu inverted fixed='top'>
       <Container>
         <Menu.Item header as={NavLink} to='/' exact>
-          <img src='/assets/logo-white.png' alt='logo' />
-          Landscope
+          {/* <img src='/assets/logo-white.png' alt='logo' /> */}
+          Rai Disputa
         </Menu.Item>
 
         <Fragment>
-          <Menu.Item
-            name='Cartographie'
-            as={NavLink}
-            to='/cartographie'
-            exact
-          />
-          <Menu.Item name='Projets' as={NavLink} to='/projets' exact />
-
-          <Menu.Item name='A propos' as={NavLink} to='/about' exact />
+          <Menu.Item name='Cases' as={NavLink} to='/cases' exact />
+          <Menu.Item name='Map' as={NavLink} to='/map' exact />
+          <Menu.Item name='About' as={NavLink} to='/about' exact />
           {state.loggedIn && (
             <Menu.Item>
               <Button
                 as={Link}
-                to='/projets/nouveau'
+                to='/case/new'
                 floated='right'
                 color='yellow'
-                content='Nouveau projet'
+                content='New case'
               />
             </Menu.Item>
           )}

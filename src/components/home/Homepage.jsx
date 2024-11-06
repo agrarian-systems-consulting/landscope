@@ -15,17 +15,17 @@ export default class Homepage extends Component {
       <Segment inverted textAlign='center' vertical className='masthead'>
         <Container text>
           <Header as='h1' inverted>
-            Landscope
+            Rai Disputa
           </Header>
           <Image
             size='small'
-            src='/assets/logo-text-white.svg'
+            src='/assets/ksi-logo.png'
             alt='logo'
             style={{ margin: 'auto', marginBottom: 60 }}
-          />
+          /> 
           <br />
           <Button as={Link} to='/about' size='huge' inverted>
-            Commencer
+            Start
             <Icon name='right arrow' inverted />
           </Button>
         </Container>

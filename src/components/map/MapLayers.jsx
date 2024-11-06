@@ -32,8 +32,7 @@ const MapboxStreet = new OlTileLayer({
   title: 'Fond Satellite',
   visible: true,
   source: new XYZ({
-    url:
-      'https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw',
+    url: 'https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw',
   }),
 });
 
@@ -41,8 +40,7 @@ const MapboxTerrain = new OlTileLayer({
   title: 'Mapbox Terrain',
   visible: false,
   source: new XYZ({
-    url:
-      'https://api.mapbox.com/v4/mapbox.outdoors/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw',
+    url: 'https://api.mapbox.com/v4/mapbox.outdoors/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw',
   }),
 });
 
@@ -50,8 +48,7 @@ const MapboxSatellite = new OlTileLayer({
   title: 'Mapbox Satellite',
   visible: false,
   source: new XYZ({
-    url:
-      'https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw',
+    url: 'https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHVnb2xlaG91eCIsImEiOiItOHl6Sm5jIn0.12l_k0K_Z28UE-Jc0kDgpw',
   }),
 });
 
@@ -122,7 +119,7 @@ const sourceVector = new OlVectorSource({
 });
 
 const layerVector = new OlVectorLayer({
-  title: 'Projects',
+  title: 'Cases',
   source: sourceVector,
   style: stylePolygonBasic,
 });

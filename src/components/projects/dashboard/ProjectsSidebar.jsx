@@ -6,7 +6,9 @@ import { UserContext } from '../../../app/layout/App';
 export const ProjectsSidebar = ({
   setSearch,
   setFilterCategory,
+  setFilterStatus,
   filterCategory,
+  statusCategory,
 }) => {
   const { state, dispatch } = useContext(UserContext);
 
@@ -20,6 +22,8 @@ export const ProjectsSidebar = ({
     'Café',
   ];
 
+  const filterStatus = ['Ongoing', 'In trial', 'Solved'];
+
   return (
     <Fragment>
       <Menu vertical fluid>
@@ -31,7 +35,9 @@ export const ProjectsSidebar = ({
             onChange={(e) => setSearch(e.target.value)}
           />
         </Menu.Item>
+      </Menu>
 
+      <Menu vertical fluid>
         <Menu.Item
           active={filterCategory === ''}
           onClick={(e) => {
@@ -39,7 +45,34 @@ export const ProjectsSidebar = ({
             setSearch('');
           }}
         >
-          Toutes les commodités
+          All status
+          {filterCategory === '' && <Icon name='filter' />}
+        </Menu.Item>
+        {filterStatus.map((status, index) => {
+          return (
+            <Menu.Item
+              key={index}
+              active={filterStatus === status}
+              onClick={(e) => {
+                setFilterStatus(status);
+              }}
+            >
+              {status}
+              {filterStatus === status && <Icon name='filter' />}
+            </Menu.Item>
+          );
+        })}
+      </Menu>
+
+      <Menu vertical fluid>
+        <Menu.Item
+          active={filterCategory === ''}
+          onClick={(e) => {
+            setFilterCategory('');
+            setSearch('');
+          }}
+        >
+          All crops
           {filterCategory === '' && <Icon name='filter' />}
         </Menu.Item>
 
@@ -58,9 +91,10 @@ export const ProjectsSidebar = ({
           );
         })}
       </Menu>
+
       {state.loggedIn && (
-        <Button as={NavLink} to='/projets/nouveau' fluid color='yellow'>
-          Créer un projet
+        <Button as={NavLink} to='/case/news' fluid color='yellow'>
+          Add new case
         </Button>
       )}
     </Fragment>

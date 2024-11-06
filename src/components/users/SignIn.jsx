@@ -51,7 +51,7 @@ const SignIn = (props) => {
                       });
 
                       // Go to map once authenticated
-                      history.push('/cartographie');
+                      history.push('/cases');
                     })
                     .catch((error) => {
                       setFirebaseError(error.message || error.code);

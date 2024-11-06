@@ -204,13 +204,13 @@ class ProjectsNew extends Component {
                   {this.state.action === 'add' ? (
                     <Button
                       floated='right'
-                      content='Recommencer'
+                      content='Restart'
                       onClick={this.doClear.bind(this)}
                     />
                   ) : (
                     <Button
                       primary
-                      content='Dessiner'
+                      content='Draw'
                       onClick={this.doDraw.bind(this)}
                     />
                   )}
@@ -223,7 +223,7 @@ class ProjectsNew extends Component {
           <Grid.Column width={16}>
             <Segment.Group>
               <Segment attached='top'>
-                <h5>Description du projet</h5>
+                <h5>Case description</h5>
               </Segment>
               <Segment attached='bottom'>
                 <Grid>
@@ -335,7 +335,7 @@ class ProjectsNew extends Component {
                               <div>
                                 <Button
                                   primary
-                                  content='Valider'
+                                  content='Confirm'
                                   type='submit'
                                   disabled={isSubmitting || !isValid || !dirty}
                                   loading={isSubmitting}

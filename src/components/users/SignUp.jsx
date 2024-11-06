@@ -59,7 +59,7 @@ export const SignUp = () => {
                         type: 'LOGIN',
                         payload: res,
                       });
-                      history.push('/cartographie');
+                      history.push('/cases');
                     })
                     .catch((error) => {
                       setFirebaseError(error.message || error.code);
